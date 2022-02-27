@@ -14,9 +14,9 @@ def b_str(words):
     """
     for i in words:
         text_merge = f"b'{i}'"
-        print(type(eval(text_merge)))
-        print(eval(text_merge))
-        print(len(text_merge))
+        print('тип:', type(eval(text_merge)))
+        print('содержимое:', eval(text_merge))
+        print(f'длина "{i}": = {len(text_merge)}')
 
     print('-' * 70)
 
