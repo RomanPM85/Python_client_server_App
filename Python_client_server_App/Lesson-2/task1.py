@@ -16,3 +16,53 @@
 получение данных через вызов функции get_data(), а также сохранение подготовленных данных в
 соответствующий CSV-файл; Проверить работу программы через вызов функции write_to_csv().
 """
+import re
+
+from chardet import detect
+
+
+# Вводные данные
+input_files = ['info_1.txt', 'info_2.txt', 'info_3.txt']
+list_encoding = []  # список кодировки файлов
+os_prod_list = []  # «Изготовитель системы»
+os_name_list = []  # список «Название ОС»
+os_code_list = []  # список «Код продукта»
+os_type_list = []  # список «Тип системы»
+
+
+def get_data(files):
+    """
+    Функция, которая определяет кодировку файлов, читает файл и дополнительно возвращает
+    список кодировок.
+    :param files:
+    :return: list_encoding
+    """
+
+    for file in files:
+        # узнаём кодировку неизвестного нам файла
+        with open(file, 'rb') as f:
+            content = f.read()
+        encoding = detect(content)['encoding']
+        print('encoding: ', encoding)
+        list_encoding.append(encoding)
+
+        # открываем файл в известной нам кодировке
+        with open(file, encoding=encoding) as f_n:
+            for el_str in f_n:
+                print(el_str, end='')
+            print()
+            print('-' * 70)
+
+            # result = []
+            # for line in f_n.readiness():
+            #     result += re.findall(r'^(\w[^:]+).*:\s+([^:\n]+)\s*$', line)
+            #     print(result)
+
+
+def write_to_csv():
+    pass
+
+
+if __name__ == "__main__":
+    get_data(input_files)
+    # print(list_encoding)
