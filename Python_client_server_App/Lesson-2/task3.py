@@ -10,3 +10,33 @@
 с юникод: allow_unicode = True;
 Реализовать считывание данных из созданного файла и проверить, совпадают ли они с исходными.
 """
+import yaml
+
+# данные в виде словаря, для записи в файл формата YAML
+data_dic = {'100€': [1, 2, 3, 4],
+            '200€': 8000,
+            '300€': {'first': [1, 2, 3, 4],
+                     'second': 800, }
+            }
+
+
+def write_dict_to_yaml(dic, file):
+    """
+    Функция для сохранение данных в файле YAML-формата
+    :param dic:
+    :param file:
+    :return:
+    """
+    with open(file, 'w') as f_n:
+        yaml.dump(dic, f_n, default_flow_style=False, allow_unicode=True)
+
+    with open(file) as f_n:
+        f_n_content = yaml.load(f_n)
+        # f_n_content = yaml.safe_load(f_n)
+    print(f_n_content == dic)
+    print(dic)
+    print(f_n_content)
+
+
+if __name__ == "__main__":
+    write_dict_to_yaml(data_dic, 'file.yaml')
