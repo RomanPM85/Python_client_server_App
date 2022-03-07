@@ -20,7 +20,7 @@ date_bd = ['08.03.2022', '08.03.2022', '08.03.2022', '08.03.2022']
 
 
 def write_order_to_json(item, quantity, price, buyer, date):
-    with open('orders.json') as f_n:
+    with open('orders.json', 'r', encoding='utf-8') as f_n:
         dict_to_json = json.load(f_n)
         print(dict_to_json)
         dict_to_json['orders'].append({
@@ -30,7 +30,7 @@ def write_order_to_json(item, quantity, price, buyer, date):
             'buyer': buyer,
             'date': date,
         })
-    with open('orders.json', 'w') as f_w:
+    with open('orders.json', 'w', encoding='utf-8') as f_w:
         json.dump(dict_to_json, f_w, indent=4)
 
 

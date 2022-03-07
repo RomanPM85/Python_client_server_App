@@ -27,12 +27,11 @@ def write_dict_to_yaml(dic, file):
     :param file:
     :return:
     """
-    with open(file, 'w') as f_n:
+    with open(file, 'w', encoding='utf-8') as f_n:
         yaml.dump(dic, f_n, default_flow_style=False, allow_unicode=True)
 
-    with open(file) as f_n:
-        f_n_content = yaml.load(f_n)
-        # f_n_content = yaml.safe_load(f_n)
+    with open(file, 'r', encoding='utf-8') as f_n:
+        f_n_content = yaml.safe_load(f_n)
     print(f_n_content == dic)
     print(dic)
     print(f_n_content)
