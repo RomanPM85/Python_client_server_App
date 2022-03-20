@@ -34,6 +34,14 @@ def process_ans(message):
     if RESPONSE in message:
         if message[RESPONSE] == 200:
             return '200 : OK'
+        elif message[RESPONSE] == 404:
+            return f'404 : {message[ERROR]}'
+        elif message[RESPONSE] == 408:
+            return f'408 : {message[ERROR]}'
+        elif message[RESPONSE] == 429:
+            return f'429 : {message[ERROR]}'
+        elif message[RESPONSE] == 499:
+            return f'499 : {message[ERROR]}'
         return f'400 : {message[ERROR]}'
     raise ValueError
 

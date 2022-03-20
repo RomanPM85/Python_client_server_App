@@ -21,8 +21,7 @@ def process_client_message(message):
         return {RESPONSE: 200}
     return {
         RESPONSE_DEFAULT_IP_ADDRESS: 400,
-        ERROR: 'Bad Request'
-    }
+        ERROR: 'Bad Request'}
 
 
 def main():
