@@ -2,7 +2,7 @@
 
 import sys
 import os
-# import logging
+import logging
 import logging.handlers
 
 # from pprint import pprint
