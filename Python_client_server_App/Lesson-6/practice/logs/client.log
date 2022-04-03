@@ -1,0 +1,39 @@
+2022-03-27 17:45:17,491 50 config_client_log Критическая ошибка
+2022-03-27 17:45:17,491 40 config_client_log Ошибка
+2022-03-27 17:45:17,491 30 config_client_log Предупреждение
+2022-03-27 17:45:17,491 20 config_client_log Информационное сообщение
+2022-03-27 17:45:17,491 10 config_client_log Отладочная информация
+2022-03-27 21:01:23,901 50 CRITICAL config_client_log Критическая ошибка
+2022-03-27 21:01:23,901 40 ERROR config_client_log Ошибка
+2022-03-27 21:01:23,901 30 WARNING config_client_log Предупреждение
+2022-03-27 21:01:23,901 20 INFO config_client_log Информационное сообщение
+2022-03-27 21:01:23,901 10 DEBUG config_client_log Отладочная информация
+2022-03-28 22:50:03,071 50 CRITICAL config_client_log Критическая ошибка
+2022-03-28 22:50:03,072 40 ERROR config_client_log Ошибка
+2022-03-28 22:50:03,072 30 WARNING config_client_log Предупреждение
+2022-03-28 22:50:03,072 20 INFO config_client_log Информационное сообщение
+2022-03-28 22:50:03,072 10 DEBUG config_client_log Отладочная информация
+2022-03-29 02:11:41,729 10 DEBUG client Сформировано presence сообщение для пользователя Guest
+2022-03-29 02:11:41,734 10 DEBUG decos Была вызвана функция create_presence c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля client.py
+2022-03-29 02:11:41,735 10 DEBUG decos Была вызвана функция send_message c параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58790), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1648509101.7293108, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля client.py
+2022-03-29 02:11:41,736 10 DEBUG decos Была вызвана функция get_message c параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58790), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля client.py
+2022-03-29 02:11:41,736 10 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2022-03-29 02:11:41,736 10 DEBUG decos Была вызвана функция process_ans c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main@@@Вызов из функции main@@@вызов из модуля client.py
+2022-03-29 02:11:41,736 20 INFO client Принят ответ от сервера 200 : OK
+2022-03-29 02:15:23,445 50 CRITICAL config_client_log Критическая ошибка
+2022-03-29 02:15:23,445 40 ERROR config_client_log Ошибка
+2022-03-29 02:15:23,445 30 WARNING config_client_log Предупреждение
+2022-03-29 02:15:23,445 20 INFO config_client_log Информационное сообщение
+2022-03-29 02:15:23,445 10 DEBUG config_client_log Отладочная информация
+2022-03-29 02:17:16,336 50 CRITICAL config_client_log Критическая ошибка
+2022-03-29 02:17:16,336 40 ERROR config_client_log Ошибка
+2022-03-29 02:17:16,336 30 WARNING config_client_log Предупреждение
+2022-03-29 02:17:16,336 20 INFO config_client_log Информационное сообщение
+2022-03-29 02:17:16,337 10 DEBUG config_client_log Отладочная информация
+2022-03-29 02:19:22,707 10 DEBUG client Сформировано presence сообщение для пользователя Guest
+2022-03-29 02:19:22,713 10 DEBUG decos Была вызвана функция create_presence c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции mainВызов из функции mainвызов из модуля client.py
+2022-03-29 02:19:22,714 10 DEBUG decos Была вызвана функция send_message c параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58792), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1648509562.7071078, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.Вызов из функции main().Вызов из функции mainВызов из функции mainвызов из модуля client.py
+2022-03-29 02:19:22,715 10 DEBUG decos Была вызвана функция get_message c параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58792), raddr=('127.0.0.1', 7777)>,), {}.Вызов из модуля common.utils.Вызов из функции main().Вызов из функции mainВызов из функции mainвызов из модуля client.py
+2022-03-29 02:19:22,715 10 DEBUG client Разбор сообщения от сервера: {'response': 200}
+2022-03-29 02:19:22,715 10 DEBUG decos Была вызвана функция process_ans c параметрами ({'response': 200},), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции mainВызов из функции mainвызов из модуля client.py
+2022-03-29 02:19:22,715 20 INFO client Принят ответ от сервера 200 : OK
