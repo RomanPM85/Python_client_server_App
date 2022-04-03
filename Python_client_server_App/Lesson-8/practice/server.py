@@ -90,7 +90,10 @@ def process_message(message, names, listen_socks):
 
 @log
 def arg_parser():
-    """Парсер аргументов командной строки"""
+    """
+    Парсер аргументов командной строки.
+    :return:
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument('-p', default=DEFAULT_PORT, type=int, nargs='?')
     parser.add_argument('-a', default='', nargs='?')

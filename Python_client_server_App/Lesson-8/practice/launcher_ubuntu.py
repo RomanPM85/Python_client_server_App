@@ -32,10 +32,10 @@ while True:
     elif action == "s":
         process.append(get_subprocess("server.py"))
 
-        for i in range(2):
+        for i in range(3):
             process.append(get_subprocess("client.py -m send"))
 
-        for i in range(2):
+        for i in range(3):
             process.append(get_subprocess("client.py -m listen"))
 
     elif action == "x":
